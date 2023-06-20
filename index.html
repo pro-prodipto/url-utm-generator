@@ -153,7 +153,7 @@
         return;
       }
 
-      var url = "https://b062-2401-4900-1c00-6708-ddce-34b-8ded-6823.ngrok-free.app";
+      var url = "https://pro-prodipto.github.io/AR.js-test/";
       var utmUrl = url + "?utm_text=" + inputValue;
       document.getElementById("outputField").value = utmUrl;
     }
@@ -181,19 +181,21 @@
   <div class="container">
     <h1>Cool Secret Message Generator 😎</h1>
     <link rel="icon" type="image/x-icon" href="twlogo.png"> <!--showing favicon but didn't work-->
-    <label for="inputField">Enter 10-digit text:</label>
-    <input type="text" id="inputField" maxlength="20" placeholder="Enter text without spaces"><br><br>
-    <button onclick="generateUTM()">Generate</button><br><br>
+    <label for="inputField">Enter text (20 characters only) :</label>
+    <input type="text" id="inputField" maxlength="20" placeholder="Enter your secret message here->"><br><br>
+    <button onclick="generateUTM()">Generate!</button><br><br>
     <div class="output-container">
       <label class="output-label" for="outputField">Generated URL:</label>
       <input class="output-field" type="text" id="outputField" readonly><br><br>
       <button class="copy-button" onclick="copyToClipboard()">Click to Copy</button>
     </div>
-    <button class="instructions-button" onclick="showInstructions()">Show Instructions</button>
+    <button class="instructions-button" onclick="showInstructions()">Show the Instructions</button>
     <div class="popup" id="instructionsPopup">
       <div class="popup-content">
         <span onclick="closeInstructions()" style="float: right; cursor: pointer; padding: 10px;">&#10005;</span>
         <p>Hit the "Click to Copy" button, and the generated URL will be copied to your clipboard. Share it with the person you want to share your secret message with and ask them to scan our official target image to reveal the secret message. Your secret message will appear perpendicular to our target image. Have fun and ENJOY!</p>
+        <p>Click the link below to download our target image:</p>
+        <a href="hiro.png" download="hiro.png">Download!</a>
       </div>
     </div>
   </div>
